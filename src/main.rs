@@ -19,7 +19,6 @@ fn main() {
     }
 
     println!("
-    0. Age
     1. Study
     2. Work
     3. Party
@@ -28,4 +27,20 @@ fn main() {
     6. Quit");
 
     let mut input = String::new();
-    io::stdin().readline
+    io::stdin().read_line(&mut input).unwrap();
+
+    age += 1;
+
+    match input.trim() {
+        "1" => {
+            happiness -= 5;
+            println!("You studied!")
+        }
+
+        "2" => {
+            money += 10;
+            happiness -=5;
+            println!()
+        }
+        
+    }
