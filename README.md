@@ -41,3 +41,9 @@ Clone the repository:
 ```bash
 git clone https://github.com/yourusername/lifesim.git
 cd lifesim
+```
+Build and run the project 
+```bash
+cargo build
+cargo run
+```
