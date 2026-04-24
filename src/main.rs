@@ -19,12 +19,12 @@ fn main() {
     
 
         println!("
-            1. Study
-            2. Work
-            3. Party
-            4. Gym
-            5. Do nothing 
-        To quit press Control + C on your keyboard");
+1. Study
+2. Work
+3. Party
+4. Gym
+5. Do nothing 
+6. Quit");
 
         let mut input = String::new();
         io::stdin().read_line(&mut input).unwrap();
@@ -59,7 +59,7 @@ fn main() {
         
             "6" => {
                 println!("Baiiiiii");
-                break; // ✅ actually exits now
+                break;
             }
 
             _ => println!("Invalid man try again"),
